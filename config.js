@@ -9,10 +9,10 @@ global.MONGODB = process.env.MONGODB_URI || "";
 global.DATABASE_URL = process.env.DATABASE_URL || "";
 global.sudo = process.env.SUDO
   ? process.env.SUDO.replace(/[\s+]/g, "")
-  : "237698581946";
+  : "237686724137";
 global.owner = process.env.OWNER_NUMBER
   ? process.env.OWNER_NUMBER.replace(/[\s+]/g, "")
-  : "237698581946";
+  : "237686724137";
 global.THUMB_IMAGE =
   process.env.THUMB_IMAGE ||"https://telegra.ph/file/fb8ca4b8616b5710ce60f.jpg"
   process.env.IMAGE ||

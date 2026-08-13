@@ -37,7 +37,7 @@ astro_patch.smd(
     cmdname: "menu",
     desc: "Help list",
     react: "🐉",
-    desc: "To show all avaiable commands.",
+    desc: "To show all available commands.",
     type: "user",
     filename: __filename,
   },
@@ -176,8 +176,12 @@ astro_patch.smd(
       }
       menuText += Config.caption;
 
+      // Thumbnail image URL
+      const thumbnailUrl = 'https://telegra.ph/file/fb8ca4b8616b5710ce60f.jpg'; // Replace with your image URL
+
       const messageOptions = {
         caption: menuText,
+        thumbnail: thumbnailUrl,  // Attach the thumbnail image
         ephemeralExpiration: 3000,
       };
       return await message.sendUi(message.chat, messageOptions, message);
